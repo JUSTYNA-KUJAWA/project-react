@@ -1,7 +1,6 @@
 import Card from '../Card/Card';
 import styles from './Column.module.scss'; 
 import CardForm from '../CardForm/CardForm';
-import 'font-awesome/css/font-awesome.min.css';
 
 const Column = props => {
   // console.log(props);
