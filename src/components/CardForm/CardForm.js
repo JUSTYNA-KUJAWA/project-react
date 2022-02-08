@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Button from "../Button/Button";
-import TextInput from "../TextInput/Textinput";
+import TextInput from "../TextInput/TextInput";
 import styles from "./CardForm.module.scss";
 
 const CardForm = props =>{
