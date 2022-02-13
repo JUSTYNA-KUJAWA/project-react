@@ -1,0 +1,30 @@
+@import '../../styles/settings.scss';
+
+.navBar {
+  background-color: darken($color-dark,3%);
+  padding-top: 10px;
+
+  .container{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+.icon::before{
+  color: white;
+  font-size: 30px;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  display: inline;
+  padding: 0 15px;
+  font-size: 16px;
+}
+a{
+  color:white;
+  text-decoration: none;
+}
