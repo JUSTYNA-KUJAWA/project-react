@@ -6,9 +6,6 @@ import { getFilteredCards } from '../../Redux/store';
 
 
 const Column = props => {
-  // console.log(props);
- // const searchString = useSelector(state => state.searchString.searchString);
-  //const cards = useSelector(state => state.cards).filter(card => card.columnId === props.id && card.title.toLowerCase().includes(searchString.toLowerCase()));
   const cards = useSelector(state => getFilteredCards(state, props.id));
   return (
     <article className={styles.column}>
@@ -20,8 +17,6 @@ const Column = props => {
     </article>
     
   )
-  
 }
-
 
 export default Column;

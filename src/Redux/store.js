@@ -14,21 +14,31 @@ const reducer = (state, action) => {
     id: shortid() }]};
 
     case 'UPDATE_SEARCHSTRING':
-      return {...state, searchString: action.payload}
+      return {...state, searchString: action.payload};
+    
+    case 'ADD_LIST':
+      return {...state, lists: [...state.lists, { ...action.payload, id: shortid() } ]};
 
   default:
     return state;
 }
 };
 // selectors
-export const getFilteredCards = ({cards, searchString}, columnId) => cards.filter(card => card.columnId === columnId && strContains(card.title, searchString.searchString) )
+export const getFilteredCards = ({cards, searchString}, columnId) => cards.filter(card => card.columnId === columnId && strContains(card.title, searchString.searchString));
 
 export const getAllColumns  = state => state.columns;
+
+export const getListById = ({ lists }, listId) => lists.find(list => list.id === listId);
+
+export const getColumnsByList = ({ columns }, listId) => columns.filter(column => column.listId === listId);
+
+export const getAllLists = ({ lists }) => lists;
 
 // action creators
 export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
 export const addCard = payload => ({ type: 'ADD_CARD', payload});
 export const updateSearchString = payload => ({ type: 'UPDATE_SEARCHSTRING', payload});
+export const addList = payload => ({ type: 'ADD_LIST', payload });
 
 const store = createStore(
   reducer,
