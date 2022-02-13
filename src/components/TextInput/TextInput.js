@@ -1,8 +1,8 @@
-import slyles from './TextInput.module.scss';
+import styles from './TextInput.module.scss';
 
 const TextInput = (props) => {
   return (
-    <input className={slyles.input} value={props.value} onChange={props.onChange} placeholder={props.placeholder} type="text" />
+    <input className={styles.input} value={props.value} onChange={props.onChange} placeholder={props.placeholder} type="text" />
   )
 }
 
