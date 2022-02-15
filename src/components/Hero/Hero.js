@@ -1,6 +1,6 @@
 import styles from'./Hero.module.scss';
 import PageTitle from '../PageTitle/PageTitle';
-import PageUntitle from '../PageUntitle/PageUntitle'
+import PageUntitle from '../PageUntitle/PageUntitle';
 
 const Hero = () => {
   return (

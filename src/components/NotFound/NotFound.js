@@ -1,4 +1,4 @@
-import PageUntitle from '../PageUntitle/PageUntitle'
+import PageUntitle from '../PageUntitle/PageUntitle';
 
 const NotFound = () => {
   return(

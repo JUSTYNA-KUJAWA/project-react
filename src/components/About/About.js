@@ -1,4 +1,4 @@
-import PageTitle from '../PageTitle/PageTitle'
+import PageTitle from '../PageTitle/PageTitle';
 
 const About = () => {
   return(

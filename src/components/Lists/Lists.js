@@ -1,8 +1,8 @@
-import { useSelector } from "react-redux"
+import { useSelector } from "react-redux";
 import { getAllLists } from '../../Redux/store';
-import styles from './Lists.module.scss'
-import { Link } from "react-router-dom"
-import ListForm from "../ListForm/ListForm"
+import styles from './Lists.module.scss';
+import { Link } from "react-router-dom";
+import ListForm from "../ListForm/ListForm";
 
 const Lists = () => {
 
@@ -16,7 +16,7 @@ const Lists = () => {
           <h3>{list.title}</h3>
           <p>{list.description}</p>
         </Link>
-      ))}
+      ))};
 
       <ListForm/>
 
