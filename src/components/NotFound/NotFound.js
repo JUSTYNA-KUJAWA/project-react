@@ -1,10 +1,9 @@
-import styles from './NotFound.module.scss'
+import PageUntitle from '../PageUntitle/PageUntitle'
 
 const NotFound = () => {
   return(
-    <div className={styles.container}>
-      <h1>404 NOT FOUND</h1>
-    </div>
-  )
+    <PageUntitle addMargin><h2>Not found 404!</h2> wrong web</PageUntitle>
+  );
 }
+
 export default NotFound;

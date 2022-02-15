@@ -1,12 +1,9 @@
-import styles from './About.module.scss'
+import PageTitle from '../PageTitle/PageTitle'
 
 const About = () => {
   return(
-    <div className={styles.container}>
-      <h1>About</h1>
-      <p>Lorem input</p>
-    </div>
-  )
+    <PageTitle>About</PageTitle>
+  );
 }
 
 export default About;

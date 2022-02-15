@@ -1,0 +1,13 @@
+@import '../../styles/settings.scss';
+
+.untitle {
+  padding: ($base-size * 2) 0;
+  text-align: center;
+  font-size: ($base-size * 2);
+  font-weight: normal;
+  margin-top: (- $base-size * 3);
+}
+
+.addMargin {
+  margin-top: $base-size * 5;
+}
