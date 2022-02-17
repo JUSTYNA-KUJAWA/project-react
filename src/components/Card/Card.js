@@ -4,12 +4,12 @@ import { useDispatch} from 'react-redux';
 import { toggleCardFavorite,removeCard } from '../../Redux/cardRedux';
 
 const Card = props => {
-  const cardId = props.cardId;
+  const cardId = props.id;
 
   const dispatch = useDispatch();
 
   const beFavorite = () => {
-    dispatch(toggleCardFavorite(cardId ));
+    dispatch(toggleCardFavorite(cardId));
   };
 
   const beRemoved = e => {
