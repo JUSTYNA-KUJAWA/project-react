@@ -4,7 +4,8 @@ import Column from '../Column/Column';
 //import shortid from 'shortid';
 import { useSelector } from 'react-redux';
 import ColumnForm from '../ColumnForm/ColumnForm';
-import { getColumnsByList, getListById } from '../../Redux/store';
+import { getColumnsByList } from '../../Redux/columnRedux';
+import  { getListById } from '../../Redux/listRedux';
 import { Navigate, useParams } from 'react-router-dom';
 import SearchForm from '../SearchForm/SearchForm';
 
